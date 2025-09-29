@@ -65,9 +65,8 @@ Designed with a mobile-first approach, ensuring no content breaks at different s
 
 ## Screenshots
 
-<img width="707" height="704" alt="image" src="https://github.com/user-attachments/assets/de6b7a54-9542-4cf1-af04-bd6a069ebc46" />
-<img width="351" height="748" alt="image" src="https://github.com/user-attachments/assets/f77e3bff-ae93-4069-9a55-2171db480eff" />
-<img width="350" height="753" alt="image" src="https://github.com/user-attachments/assets/cfe8e05c-bb94-4c9c-a4d8-e64ae7bdd463" />
-
+<img width="1834" height="1251" alt="image" src="https://github.com/user-attachments/assets/0ea3466a-b1c6-4523-a3cb-d5236c489955" />
+<img width="385" height="828" alt="image" src="https://github.com/user-attachments/assets/b94c6a89-4d81-42c5-8cdc-b92ea6a11ee1" />
+<img width="387" height="836" alt="image" src="https://github.com/user-attachments/assets/f4d63a70-03fa-472d-9c9b-1ca4db61f653" />
 
 
