@@ -1,0 +1,89 @@
+.luxury-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.luxury-video h2,
+.luxury-video p {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+.video-container {
+  width: 90%;
+  max-width: 1200px;
+  padding-bottom: 40%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__car {
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.car__card h3,
+.car__card p {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.car1 {
+  background-image: url("../images/toyotaCorolla.jpg");
+}
+
+.car2 {
+  background-image: url("../images/bmw.png");
+}
+
+.car3 {
+  background-image: url("../images/volvox40.png");
+}
+
+.car4 {
+  background-image: url("../images/AudiA4.png");
+}
+
+.car5 {
+  background-image: url("../images/mercedes.png");
+}
+
+.car6 {
+  background-image: url("../images/volkswagen.png");
+}
+
+.car7 {
+  background-image: url("../images/ford.png");
+}
+
+.car8 {
+  background-image: url("../images/nissan.png");
+}

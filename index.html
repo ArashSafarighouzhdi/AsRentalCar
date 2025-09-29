@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./icons/favicon.ico"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>AS Rental Cars</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">AS Rental Cars</div>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Your Journey Starts Here</h1>
+          <h3>Reliable cars. Affordable prices. Easy booking.</h3>
+
+          <form
+            action="mailto:safari.arash@gmail.com?subject=Booking"
+            method="post"
+            enctype="text/plain"
+            class="form"
+          >
+            <h2>Book Your Car</h2>
+            <label for="pickup">Pick-up Time</label>
+            <input type="datetime-local" id="pickup" name="pickup" required />
+
+            <label for="dropoff">Drop-off Time</label>
+            <input type="datetime-local" id="dropoff" name="dropoff" required />
+
+            <label for="car">Choose a Car</label>
+            <select id="car" name="car" required>
+              <option value="">-- Select a Car --</option>
+              <option value="sedan">Sedan</option>
+              <option value="suv">SUV</option>
+              <option value="luxury">Luxury</option>
+              <option value="van">Van</option>
+            </select>
+
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+46 70 123 4567"
+              pattern="^\+?[1-9]\d{1,14}$"
+              title="Enter a phone number in international format: +[country code][number] (max 15 digits)."
+              required
+            />
+
+            <button type="submit">Book Now</button>
+            <p class="info">
+              Book now, we will call you within 5 minutes to confirm your
+              booking.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section class="cards-container">
+        <div class="card home-card">
+          <h3>Drive Your Adventure</h3>
+          <p>Step into the driver's seat and explore without limits.</p>
+        </div>
+
+        <div class="card home-card">
+          <h3>Your Ride, Your Rules</h3>
+          <p>
+            Enjoy freedom and flexibility with a wide selection of vehicles.
+          </p>
+        </div>
+
+        <div class="card home-card">
+          <h3>Reliable Cars</h3>
+          <p>
+            Travel confidently in well-maintained vehicles that make your
+            journey smooth.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://www.linkedin.com/in/safariarash/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <p><span class="designby">Arash</span></p>
+        &copy;2025 All rights reserved.
+      </a>
+    </footer>
+  </body>
+</html>

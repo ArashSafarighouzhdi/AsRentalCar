@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("../images/background-image.png") center/cover no-repeat fixed;
+  color: #0e176f;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+nav {
+  background: rgba(30, 60, 114, 0.8);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 30px;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #34e7e4, 2px 2px #34e7e4, 3px 3px 0 #34e7e4,
+    4px 4px #34e7e4, 5px 5px 0 #34e7e4, 6px 6px #34e7e4, 7px 7px 0 #34e7e4,
+    8px 8px #34e7e4, 9px 9px 0 #34e7e4, 10px 10px #34e7e4,
+    20px 20px 30px rgba(0, 0, 0, 0.3);
+  transform-style: preserve-3d;
+  display: inline-block;
+
+  animation: logo3D 3s ease-in-out infinite alternate;
+}
+
+@keyframes logo3D {
+  0% {
+    transform: perspective(600px) rotateX(-45deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(600px) rotateX(45deg) rotateY(0deg);
+  }
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.hero-section {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-content h3 {
+  padding-bottom: 25px;
+}
+
+.hero-content h1,
+.hero-content h3,
+.hero-content h2,
+.hero-content h4,
+nav .logo,
+nav a,
+.form h2,
+.form label,
+.card h3,
+.card p,
+.footer {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.form h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.form label {
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+}
+
+.form input,
+.form select {
+  padding: 12px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.form button {
+  padding: 14px;
+  background: linear-gradient(45deg, #ff4e50, #f9d423);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.info {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 8px 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 30px 20px;
+  max-width: 300px;
+  flex: 1 1 250px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.card:not(.card__car):hover {
+  transform: translateY(-5px);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.map-section {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+  background: rgba(30, 60, 114, 0.8);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.designby {
+  font-family: "Libertinus Keyboard", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.home-card {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .form {
+    max-width: 90%;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cards-container {
+    padding: 50px 10px;
+  }
+}
